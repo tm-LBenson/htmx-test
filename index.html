@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Band Landing Page</title>
+    <script src="https://unpkg.com/htmx.org"></script>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .navbar { display: flex; justify-content: space-between; padding: 20px; background-color: #333; color: white; }
+        .content { padding: 20px; }
+        .footer { background-color: #333; color: white; text-align: center; padding: 10px; position: fixed; bottom: 0; width: 100%; }
+        .band-image { width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <div>Band Name</div>
+    <nav>
+        <a href="#" hx-get="/about" hx-target="#content" style="color: white; margin-right: 15px;">About</a>
+        <a href="#" hx-get="/shows" hx-target="#content" style="color: white;">Shows</a>
+    </nav>
+</div>
+
+<div class="content" id="content">
+    <img src="https://images.unsplash.com/photo-1526478806334-5fd488fcaabc?q=80&w=2116&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA" class="band-image" alt="Band Image">
+
+</div>
+
+<div class="footer">
+    © 2024 Band Name. All rights reserved.
+</div>
+
+</body>
+</html>
